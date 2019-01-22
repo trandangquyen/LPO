@@ -1,0 +1,342 @@
+$white: #fff;
+$silver: #d4dae0;
+$dark-grey-blue: #284664;
+$black: #282828;
+$white-two: #f3f3f3;
+$marine: #083050;
+$slate: #536b82;
+$adobe: #b97d46;
+$peach: #faba7a;
+$wheat: #facb9b;
+$pale: #feeede;
+$pale-orange: #faaa5a;
+$blue-grey: #7d90a0;
+$pinkish-grey: #cccccc;
+$darkish-green: #327846;
+$pine: #245a34;
+$warm-grey: #888888;
+$slate-green: #5a936b;
+$greyish-green: #84ae90;
+$light-grey: #d7e6dc;
+$tealish: #32b4c8;
+$mid-blue: #268695;
+$seafoam-blue: #5bc3d2;
+$light-teal: #85d2de;
+$light-blue-grey: #d7f0f5;
+$light-maroon: #964b5a;
+$rose: #c86478;
+$dusty-pink: #d28393;
+$faded-pink: #dda2ae;
+$faded-pink-two: #f5e1e4;
+/*reset css*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q,
+blockquote {
+    quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.4em;
+    color: #333333;
+    background-color: #fff;
+    line-height: 1.6;
+    position: relative;
+    right: 0;
+    .article-wrapper {
+        transition: transform .5s cubic-bezier(.645, .045, .355, 1);
+    }
+}
+
+.clearfix {
+    display: inline-block;
+    clear: both;
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*end reset css*/
+
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+    display: none !important;
+}
+
+
+/* ================Start setting main page=============== */
+
+
+/*-----------------------grid system---------------------*/
+
+.page {
+    width: 100%;
+    background-color: #506780;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 1160px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.hero-banner {
+    position: relative;
+    .logo {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 131px;
+        opacity: 0.8;
+        background-color: #000000;
+        text-align: center;
+        > a {
+            line-height: 0;
+            display: inline-block;
+            position: relative;
+            top: 23px;
+        }
+    }
+}
+
+/*-----------------------end grid system---------------------*/
+
+/* Start media screen */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    .page {
+        width: 96.5%;
+    }
+    .container {
+        width: 100%;
+        max-width: 750px;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .page {
+        width: 96.5%;
+    }
+    .container {
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page {
+        width: 100%;
+    }
+    .container {
+        width: 800px;
+    }
+}
+@media (min-width: 1280px) {
+    .page {
+        width: 100%;
+    }
+    .container {
+        width: 1000px;
+    }
+}
+@media (min-width: 1920px) {
+    .page {
+        width: 100%;
+    }
+    .container {
+        width: 1200px;
+    }
+}
