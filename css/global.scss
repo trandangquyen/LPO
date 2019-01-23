@@ -1,33 +1,3 @@
-$white: #fff;
-$silver: #d4dae0;
-$dark-grey-blue: #284664;
-$black: #282828;
-$white-two: #f3f3f3;
-$marine: #083050;
-$slate: #536b82;
-$adobe: #b97d46;
-$peach: #faba7a;
-$wheat: #facb9b;
-$pale: #feeede;
-$pale-orange: #faaa5a;
-$blue-grey: #7d90a0;
-$pinkish-grey: #cccccc;
-$darkish-green: #327846;
-$pine: #245a34;
-$warm-grey: #888888;
-$slate-green: #5a936b;
-$greyish-green: #84ae90;
-$light-grey: #d7e6dc;
-$tealish: #32b4c8;
-$mid-blue: #268695;
-$seafoam-blue: #5bc3d2;
-$light-teal: #85d2de;
-$light-blue-grey: #d7f0f5;
-$light-maroon: #964b5a;
-$rose: #c86478;
-$dusty-pink: #d28393;
-$faded-pink: #dda2ae;
-$faded-pink-two: #f5e1e4;
 /*reset css*/
 
 html,
@@ -165,6 +135,10 @@ a {
     text-decoration: none;
     outline: none;
 }
+a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+}
 
 article,
 aside,
@@ -187,10 +161,10 @@ summary {
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "PingFang-SC",Helvetica,Arial,sans-serif;
     font-size: 1.4em;
-    color: #333333;
-    background-color: #fff;
+    color: #000;
+    background-color: #f7f7f7;
     line-height: 1.6;
     position: relative;
     right: 0;
@@ -238,16 +212,12 @@ body {
 
 /* ================Start setting main page=============== */
 
-
-/*-----------------------grid system---------------------*/
-
 .page {
     width: 100%;
     background-color: #506780;
     margin: 0 auto;
     position: relative;
 }
-
 .container {
     padding-right: 0px;
     padding-left: 0px;
@@ -267,25 +237,9 @@ body {
     height: 0px;
     clear: both;
 }
-
-.hero-banner {
-    position: relative;
-    .logo {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        height: 131px;
-        opacity: 0.8;
-        background-color: #000000;
-        text-align: center;
-        > a {
-            line-height: 0;
-            display: inline-block;
-            position: relative;
-            top: 23px;
-        }
-    }
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*-----------------------end grid system---------------------*/

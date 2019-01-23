@@ -1,48 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Home Page</title>
-    <link rel="shortcut icon" href="images/template/fav.ico.png">
-    <link rel="apple-touch-icon image_src" href="images/template/fav.ico.png">
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/global.css">
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Home Page</title>
+	<link rel="shortcut icon" href="images/template/fav.ico.png">
+	<link rel="apple-touch-icon image_src" href="images/template/fav.ico.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/global.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="hero-banner">
-			<img src="images/hero-banner.png" alt="">
-			<div class="logo"><a href=""><img src="images/logo.svg" alt=""></a></div>
+	<div class="lpo-wrapper">
+		<div class="container">
+			<div class="hero-banner">
+				<img src="images/hero-banner.png" alt="">
+				<div class="logo"><a href=""><img src="images/logo.svg" alt=""></a></div>
+			</div>
+			<div class="partner">
+				<ul class="clearfix">
+					<li>
+						<a href=""><img src="images/cobis_logo.svg" alt=""></a>
+						<div class="caption">英国国际学校委员会成员</div>
+					</li>
+					<li>
+						<a href=""><img src="images/ucas_logo.svg" alt=""></a>
+						<div class="caption">英国高等教育招生委员会指定招生机构</div>
+					</li>
+					<li>
+						<a href=""><img src="images/oisc_logo.svg" alt=""></a>
+						<div class="caption">英国移民署授权签证法律服务机构</div>
+					</li>
+				</ul>
+			</div>
+			<section class="customize">
+				<div class="big-title"><img src="images/gradien-ttitle.png" alt=""></div>
+				<div class="sec-desc">良心定制<img src="images/font_meet.png" alt="">见未来</div>
+				<div class="person clearfix">
+					<div class="person-item">
+						<img src="images/image_child.png" alt="">
+						<div class="person-title">幼小低龄段</div>
+					</div>
+					<div class="person-item">
+						<img src="images/image_tween.png" alt="">
+						<div class="person-title">中小衔接段</div>
+					</div>
+					<div class="person-item">
+						<img src="images/image_teenager.png" alt="">
+						<div class="person-title">精英中学段</div>
+					</div>
+				</div>
+			</section>
+			<section class="edu-process">
+				<div role="tabpanel">
+					<!-- Nav tabs -->
+					<ul class="elite-tabs clearfix" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#elite" aria-controls="elite" role="tab" data-toggle="tab">精英启蒙<br>4-7岁</a>
+						</li>
+						<li role="presentation">
+							<a href="#elite-grow" aria-controls="elite-grow" role="tab" data-toggle="tab">精英成长<br>7-13岁</a>
+						</li>
+						<li role="presentation">
+							<a href="#elite-train" aria-controls="elite-train" role="tab" data-toggle="tab">精英成长<br>7-13岁</a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="elite">
+							Pre-Prep，即预备小学准备阶段，对应学前班到小学三年级。4岁入学是英国大部分学生进入全日制学习的阶段，是接受完整的应该以私立教育的开始。这个阶段入学，学生在语言和文化上不存在障碍，将为未来进入预备小学、中学打下坚实的基础。
+						</div>
+						<div role="tabpanel" class="tab-pane" id="elite-grow">
+							Pre-Prep 7-13，即预备小学准备阶段，对应学前班到小学三年级。4岁入学是英国大部分学生进入全日制学习的阶段，是接受完整的应该以私立教育的开始。这个阶段入学，学生在语言和文化上不存在障碍，将为未来进入预备小学、中学打下坚实的基础。
+						</div>
+						<div role="tabpanel" class="tab-pane" id="elite-train">
+							Pre-Prep 13-18，即预备小学准备阶段，对应学前班到小学三年级。4岁入学是英国大部分学生进入全日制学习的阶段，是接受完整的应该以私立教育的开始。这个阶段入学，学生在语言和文化上不存在障碍，将为未来进入预备小学、中学打下坚实的基础。
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="special-sv">
+				<img src="images/description_image.png" alt="">
+				<div class="desc">
+					我们为您提供的不仅仅是孩子的一次入学，更是全天候管家式的<span>高端定制个性化服务</span>，是通往世界顶尖大学的绿色通道。
+				</div>
+			</section>
+
+			<section class="part-1 clearfix">
+				<div class="part-title"><img src="images/title_part1.png" alt=""></div>
+				<div class="part-caption">13年匠心经营 独家名校资源</div>
+				<div class="carousel">
+					<div class="slides">
+						<!-- BEGIN CAROUSEL -->
+						<div>
+							<!-- SLIDE ITEM -->
+							<a href="javascript:;">
+								<img src="images/image_part1.png" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-2.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-3.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-4.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-5.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-6.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="javascript:;">
+								<img src="images/slide-7.jpg" />
+							</a>
+						</div>
+					</div> <!-- END SLIDES -->
+				</div> <!-- END CAROUSEL -->
+			</section>
+			<section class="part-2 clearfix">
+				<div class="part-title"><img src="images/title_part2.png" alt=""></div>
+				<div class="part-caption">专业导师团队 护航入学升学</div>
+				<div class="tutor-slider slider">
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>						
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/alex.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Alexander Lindon</h3>
+						<div class="tt-profile">
+							Alex 为 LPO 英国总部资深学术导师，领导 LPO 总部学术团队完成英国顶级私校的联络、申请、入学培训、学业辅导等。Alex 师从伊顿公学现任校长，在曼彻斯特大学完成了经 ……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+				</div>
+			</section>
+			<section class="part-3">
+				<div class="part-title"><img src="images/title_part3.png" alt=""></div>
+				<div class="part-caption">无国界全时沟通 全方位贴心服务</div>
+				<img src="images/image_map.png" alt="">
+			</section>
+			<section class="part-4">
+				<div class="part-title"><img src="images/title_part4.png" alt=""></div>
+				<div class="part-caption">严格审查 无忧监护</div>
+				<img src="images/image_part4.png" alt="">
+				<div class="desc">
+					百余名专业监护人，均经过严格教育及工作背景审查，受到英国官方监管机构认证，保障孩子生活安全以及学业照顾。
+				</div>
+			</section>
+			<section class="part-5">
+				<div class="part-title"><img src="images/title_part5.png" alt=""></div>
+				<div class="part-caption">众多成功案例 丰富申校经验</div>
+				<ul>
+					<li>多年丰富申校及培训经验</li>
+					<li>铸就众多成功案例</li>
+					<li>把孩子送入最合适的学校</li>
+					<li>最大限度保障申请成功率</li>
+				</ul>
+			</section>
+			<section class="success">
+				<h2 class="sec-title">成功案例</h2>
+				<div class="std-slider slider">
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+					<div class="std-item">
+						<img src="images/alex.jpg" alt="" class="std-school">
+						<ul class="intro-wp">
+							<li><span class="intro-tt">学 生:</span>C 同学</li>
+							<li><span class="intro-tt">申请时年龄：</span>12周岁</li>
+							<li><span class="intro-tt">性 别：</span>女</li>
+							<li><span class="intro-tt">学 校 背 景：</span>国内某公立学校</li>
+						</ul>
+						<div class="std-profile">
+							C同学家长通过在英国的华人朋友介绍，在几年前找到LPO，要求申请英国排名靠前的名校。我们首先对……
+						</div>
+						<a href="#" class="view-more">展开</a>
+					</div>
+				</div>
+			</section>
+			<section class="video">
+				<h2 class="sec-title">精彩掠影</h2>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cBVGlBWQzuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section class="edu-program">
+				<h2 class="sec-title">精英教育领航计划</h2>
+				<p class="sec-caption">通往顶尖大学的绿色通道</p>
+				<div class="offer-slider slider">
+					<div class="offer-item">
+						<img src="images/image_brentwood_offer.png">
+					</div>
+					<div class="offer-item">
+						<img src="images/image_cardiff_offer.png">
+					</div>
+					<div class="offer-item">
+						<img src="images/image_charterhouse_offer.png">
+					</div>
+				</div>
+			</section>
+			<section class="schools">
+				<h2 class="sec-title">走进私校</h2>
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_eton.png">
+						<div class="name-cn">伊顿公学</div>
+						<div class="name-en">Eton College</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_harrow.png">
+						<div class="name-cn">哈罗公学</div>
+						<div class="name-en">Harrow School</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_chater.png">
+						<div class="name-cn">查特豪斯公学</div>
+						<div class="name-en">CharterHouse</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_rugby.png">
+						<div class="name-cn">拉格比公学</div>
+						<div class="name-en">Rugby School</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_westminster.png">
+						<div class="name-cn">威斯敏特斯公学</div>
+						<div class="name-en">Westminster School</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 school-item">
+						<img src="images/logo_winchester.png">
+						<div class="name-cn">温彻斯特公学</div>
+						<div class="name-en">Winchester College</div>
+					</div>
+				</div>
+				<div class="see-more"><a href="www.ukschool.net">查看更多</a></div>
+			</section>
+			<section class="freq-ask">
+				<div class="panel-group" id="ask-accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest1">1.为什么选择来英国读私校？</a>
+							</h4>
+						</div>
+						<div id="quest1" class="panel-collapse collapse in">
+							<div class="panel-body">英国是一个有悠久教育传统的国家，英国的教育以其历史悠久，学术严谨、教学水平高而闻名全球。被世界公认为教育界的典范。以九大公学为代表的英国私校在全英有约2600所，每年都吸引着来自欧美、非洲、亚洲等国家的优秀学生。<br>英国私校的优势有以下几点：1. 环境安全，校园管理严格2.历史悠久，学术与品格培养并重 3.教学先进，小班授课，充分发挥每一位学生潜力 4. 体育、音乐、艺术等课程设置丰富，提倡全面发展，快乐学习。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest2">2. 多大选择去英国好？</a>
+							</h4>
+						</div>
+						<div id="quest2" class="panel-collapse collapse">
+							<div class="panel-body">英国的中小学教育大体分为预备小学学前班，预备小学和中学三个阶段，有4岁，7岁，11岁，13岁和16岁等入学时间点。家庭应该根据孩子整体的留学规划，选择合适的入学时间。但整体来说，入学越早，孩子更容易掌握语言，融入英国的教育环境。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest3">3. 选择男校、女校还是合校？</a>
+							</h4>
+						</div>
+						<div id="quest3" class="panel-collapse collapse">
+							<div class="panel-body">男校善于培养学生的绅士风度，并锻炼严谨认真的习惯；女校注重培养学生的淑女气息以及艺术气质；而合校则注重学生身心的均衡发展，培养学生人际交往的能力。学生可根据学生的性格以及培养方向全面综合考量。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest4">4. 选择走读还是寄宿？</a>
+							</h4>
+						</div>
+						<div id="quest4" class="panel-collapse collapse">
+							<div class="panel-body">英国本国的学生大约85%选择了走读的方式；而绝大多数国际学生选择寄宿的方式。英国私立学校有超过500所学校为学生提供住宿。在周末，学校一般会组织学生参加各类活动，参观游览等，以便让学生度过充实的周末。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest5">5. 家长可以陪读吗？</a>
+							</h4>
+						</div>
+						<div id="quest5" class="panel-collapse collapse">
+							<div class="panel-body">英国移民局法律规定，孩子在12岁以下，选择走读形式上学，父母一方可以办理陪读签证。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest6">6. 英国学校入学考试怎么考？考什么内容？</a>
+							</h4>
+						</div>
+						<div id="quest6" class="panel-collapse collapse">
+							<div class="panel-body">英国私立学校一般都需要参加学校的入学考试，包括笔试和面试。笔试包含数学、数学，逻辑推理或科学等。普遍不要求雅思成绩，但很多好的学校要求参加Ukiset考试。</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#ask-accordion" href="#quest7">7. 私校读书一年需要多少花费？</a>
+							</h4>
+						</div>
+						<div id="quest7" class="panel-collapse collapse">
+							<div class="panel-body">去英国读私校的费用包含学校注册费，学校押金，学费，监护费，额外培训，辅导费用，签证费，机票，寄宿家庭等费用。学费一年3~4万英镑。综合费用在35万- 45万人民币间。
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="companies">
+					<ul>
+						<li><a href=""><img src="images/logo_lpo.svg" alt=""></a></li>
+						<li><a href=""><img src="images/logo_ieg.svg" alt=""></a></li>
+						<li><a href=""><img src="images/logo_ukuni.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="copy-right">2016-2019©️All Rights Reserved By IEG</div>
+			</footer>
 		</div>
-		<div class="partner">
-			<ul>
-				<li>
-					<a href=""><img src="images/cobis_logo.svg" alt=""></a>
-					<div class="caption">英国国际学校委员会成员</div>
-				</li>
-				<li>
-					<a href=""><img src="images/ucas_logo.svg" alt=""></a>
-					<div class="caption">英国高等教育招生委员会指定招生机构</div>
-				</li>
-				<li>
-					<a href=""><img src="images/oisc_logo.svg" alt=""></a>
-					<div class="caption">英国移民署授权签证法律服务机构</div>
-				</li>
-			</ul>
-		</div>
-		<section class="custom">
-			<div class="big-tile"><img src="images/gradien-ttitle.png" alt=""></div>
-			<div class="sec-desc">良心定制<img src="images/font_meet.png" alt="">见未来</div>
-		</section>
 	</div>
-	
+
+
 	<!-- Javascript files here -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/homepage.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.carousel-1.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/homepage.js"></script>
 </body>
+
 </html>
