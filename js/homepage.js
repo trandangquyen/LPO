@@ -9,14 +9,16 @@
     function runCarousel() {
         $('.carousel').carousel({
             hAlign: 'left',
-            hMargin: 0.3,
-            slidesPerScroll:3,
-            carouselWidth: 550,
+            hMargin: 0.,
+            slidesPerScroll: 3,
+            frontWidth: 750,
+            carouselWidth: 540,
             carouselHeight: 405,
-            left: 0,
             directionNav: false,
-            shadow: false,
-            buttonNav: 'none'
+            buttonNav: 'bullets',
+            shadow: true,
+            description: true,
+            descriptionContainer: '.description'
         });
     }
     function runSlickSlider() {
@@ -27,7 +29,8 @@
             arrows: false,
             centerMode: true,
             centerPadding: '80px',
-            focusOnSelect: true
+            focusOnSelect: true,
+            variableWidth: true
         });
     }
     function addClassActiveTab() {
