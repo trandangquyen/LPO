@@ -7,18 +7,33 @@
           });
     }
     function runCarousel() {
+        var imgWidth = 0 ;
+        var imgHeight = 0 ;
+        var crHeight = 0 ;
+        var imgMargin = 0 ;
+        var windowWidth = $(window).width();
+        if ( windowWidth <= 320) {
+            imgWidth = 250;imgHeight = 200; crHeight = 200;imgMargin = 0.2;
+        }
+        else if (windowWidth <= 600) {
+            imgWidth = 280;imgHeight = 230; crHeight = 280;imgMargin = 0.25;
+        }
+        else {
+            imgWidth = 540;imgHeight = 405; crHeight = 550;imgMargin = 0.3;
+        }
+
         $('.carousel').carousel({
             hAlign: 'left',
-            hMargin: 0.,
-            slidesPerScroll: 3,
-            frontWidth: 750,
-            carouselWidth: 540,
-            carouselHeight: 405,
+            hMargin: imgMargin,
+            frontWidth: imgWidth,
+            frontHeight: imgHeight,
+            carouselWidth: 600,
+            carouselHeight: crHeight,
+            left: 0,
+            shadow: false,
+            buttonNav: 'none',
             directionNav: false,
-            buttonNav: 'bullets',
-            shadow: true,
-            description: true,
-            descriptionContainer: '.description'
+            slidesPerScroll: 3
         });
     }
     function runSlickSlider() {
@@ -32,6 +47,12 @@
             focusOnSelect: true,
             variableWidth: true
         });
+        // On swipe event
+        $('.tutor-slider').on('swipe', function(event, slick, direction){
+            console.log('helllo');
+            $(this).find('.tt-profile.collapse').removeClass('collapse');
+            $(this).find('.view-more.active').removeClass('active');
+        });
     }
     function addClassActiveTab() {
         $('.elite-tabs li').click(function(event) {
@@ -44,6 +65,20 @@
             }
         });
     }
+    function windowResize(){
+        $(window).resize(function(){
+            setTimeout(function(){ 
+                location.reload();
+            }, 500);            
+        });
+    }
+    function expandTutorProfile(){
+        $('.tt-item .view-more').click(function(event) {
+            event.preventDefault();
+            $(this).toggleClass('active');
+            $(this).parent().siblings('.tt-profile').toggleClass('collapse');
+        });
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -54,5 +89,12 @@
         runCarousel();
         runSlickSlider();
         addClassActiveTab();
+        windowResize();
+        expandTutorProfile();
+        setTimeout(function(){ 
+           $('section.part-2 .tt-item .tt-profile').css({
+               'max-height': '245px'
+           });
+        }, 100);
     });
 })(jQuery);

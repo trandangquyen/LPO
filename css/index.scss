@@ -27,7 +27,7 @@ $desktop-width: 1200px;
 }
 .slider {
     width: 100%;
-    margin: 10rem auto;
+    margin: 0 auto 7rem;
 }
 
 .slick-slide {
@@ -46,7 +46,7 @@ $desktop-width: 1200px;
 
 .slick-slide {
   transition: all ease-in-out .3s;
-  opacity: .2;
+  opacity: .8;
 }
 
 .slick-active {
@@ -59,6 +59,9 @@ $desktop-width: 1200px;
     @include mobile {
     	max-width: 280px;
     }
+    @media screen and (max-width: 320px)  {
+		max-width: 250px;
+	}
 }
 
 /* the parent */
@@ -67,6 +70,9 @@ $desktop-width: 1200px;
 	@include mobile {
 		margin: 0 -15px;
 	}
+	@media screen and (max-width: 320px)  {
+		margin: 0 -10px;
+	}
 }
 /* the slides */
 .slick-slide {
@@ -74,24 +80,25 @@ $desktop-width: 1200px;
 	@include mobile {
 		margin: 0 15px;
 	}
+	@media screen and (max-width: 320px)  {
+		margin: 0 10px;
+	}
 }
 .slick-current {
   opacity: 1;
 }
 .hero-banner {
     position: relative;
+    line-height: 0;
     .logo {
         position: absolute;
         width: 100%;
-        bottom: 6px;
+        bottom: 0;
         left: 0;
         height: 26.2%;
         opacity: 0.8;
         background-color: #000000;
         text-align: center;
-        @include mobile {
-        	bottom: 4px;
-        }
         > a {
             line-height: 0;
             display: inline-block;
@@ -146,7 +153,8 @@ section.customize {
 	.sec-desc {
 		text-align: center;
 		font-size: 4rem;
-		margin-top: -3rem;
+		margin-top: -5.5rem;
+		margin-bottom: 0.5rem;
 	    @include mobile {
 	    	margin-top: -3rem;
 	    }
@@ -171,6 +179,7 @@ section.customize {
 		color: #c88a04;
 		font-size: 2.8rem;
 		font-weight: 500;
+		margin-top: 0.5rem;
 	}
 }
 section.edu-process {
@@ -260,25 +269,16 @@ section.edu-process {
 			&#elite {
 				&:after {
 					left: 13.8%;
-					@include mobile {
-					    left: 9.8%;
-					}
 				}		    
 			}
 			&#elite-grow {
 				&:after {
 					left: 46.7%;
-					@include mobile {
-						left: 42.7%;
-					}
 				}			
 			}
 			&#elite-train {
 				&:after {
 					left: 79.8%;
-					@include mobile {
-						left: 75.8%;
-					}
 				}			
 			}
 		}
@@ -311,7 +311,7 @@ section.special-sv {
 	}
 }
 .part-title {
-	margin-bottom: 2rem;
+	margin-bottom: 1.6rem;
 	img {
 		max-width: 17.8rem;
 	}
@@ -322,18 +322,16 @@ section.special-sv {
   	text-align: justify;
   	color: #000000;
   	margin-bottom: 7rem;
+  	display: inline-block;
+    background: #D9D9D9;
 }
 .carousel .slides .slideItem {
 	border-radius: 1.5rem;
     box-shadow: 10px 10px 3rem 6px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    width: 90.9%!important;
-    img {
-    	width: 100% !important;
-    }
 }
 .slick-list {
-	padding: 5rem 0 10rem !important;
+	padding: 5rem 0 9.5rem !important;
 }
 .desc-photo {
 	margin-bottom: 3rem;
@@ -345,25 +343,22 @@ section.part-2 {
 	.slick-center {
 	    transform: scale(1.08);
 	}
-	.slick-slide {
-		opacity: 1;
-	}
 	.part-title {
-		padding-left: 4rem;
+		margin-left: 4rem;
 		text-align: left;
 	}
 	.part-caption {
-		padding-left: 4rem;
+		margin-left: 4rem;
+		margin-bottom: 4.7rem;
 	}
 	.tt-item {
-		text-align: center;
-
+		text-align: left;
 		border-radius: 15px;
 		box-shadow: 8px 8px 3rem 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
-		padding: 5rem 3.5rem 10rem;
+		padding: 5rem 3.5rem 5rem;
 		@include mobile {
-		    padding: 5rem 3.5rem 3.2rem;
+		    padding: 5rem 1.8rem 3.2rem;
 		}
 		.img-wrap {
 			padding: 2px;
@@ -383,8 +378,8 @@ section.part-2 {
 			font-weight: 600;
 			text-align: center;
 			color: #000000;
-			margin-bottom: 4.5rem;
-		    margin-top: 2.5rem;
+			margin-bottom: 3.5rem;
+	        margin-top: 1.6rem;
 		    @include mobile {
 		    	font-size: 2.7rem;
 	    	    margin-top: 1.3rem;
@@ -397,23 +392,43 @@ section.part-2 {
 			letter-spacing: 1px;
 			text-align: justify;
 			color: #2f2f2f;
+			overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 5;
+		    -webkit-box-orient: vertical;
+		    &.collapse {
+		    	overflow: initial;
+			    text-overflow: initial;
+			    display: initial;
+			    -webkit-line-clamp: initial;
+			    -webkit-box-orient: initial;
+		    }
 		}
 	}
+	.tt-footer {
+		text-align: right;
+		margin-top: 10px;
+	}
 	.view-more {
-		float: right;
-		font-size: 2.4rem;
+		font-size: 2.8rem;
 		color: #1a73e8;
 		position: relative;
-		padding-right: 2.8rem;
+		padding-right: 2.1rem;
 		&:after {
 			content: '';
 			position: absolute;
 		    right: 0;
-		    top: 1.2rem;
+		    top: 0.7rem;
 		    width: 1.2rem;
 		    height: 1.2rem;
 			background: url(../images/icon_arrow_blue.svg) center no-repeat;
 			transform: rotate(180deg);
+		}
+		&.active {
+			&:after {
+				transform: rotate(0);
+			}
 		}
 	}
 }
@@ -471,9 +486,6 @@ section.success {
 	.slick-center {
 	    transform: scale(1.08);
 	}
-	.slick-slide {
-		opacity: 1;
-	}
 	.std-item {
 		text-align: center;
 		width: 56rem;
@@ -513,13 +525,16 @@ section.success {
 		        line-height: 1.31;
  			}
  			span {
- 				width: 27%;
+ 				width: 33%;
  				display: inline-block;
  				position: relative;
  				margin-right: 3.0rem;
  				@include mobile {
  					width: 33.5%;
  				}
+ 				@media screen and (max-width: 320px)  {
+					width: 24.5%;
+				}
  				&:after {
  					content: ":";
  					position: absolute;
@@ -582,6 +597,9 @@ section.video {
 section.edu-program {
 	background-color: #f2f2f2;
 	padding-top: 50px;
+	.big-title {
+		margin-bottom: 0;
+	}
 	.slick-center {
 	    transform: scale(1.08);
 	}
@@ -597,6 +615,7 @@ section.edu-program {
 		font-weight: 500;
 		letter-spacing: 1px;
 		color: #2f2f2f;
+		margin-bottom: 3.5rem;
 	}
 	.offer-item {
 		width: 54rem;
@@ -617,6 +636,9 @@ section.edu-program {
 		@include mobile {
 			max-width: 100%;
 		}
+	}
+	.slick-list {
+	    padding: 5rem 0 8rem !important;
 	}
 }
 section.schools {
@@ -687,6 +709,7 @@ section.schools {
 		font-size: 3.4rem;
 		letter-spacing: 1px;
   		color: #ffffff;
+	    margin-top: 2rem;
 	}
 }
 section.freq-ask {
@@ -713,7 +736,7 @@ section.freq-ask {
 	.panel-title {
 		a {
 			display: block;
-			padding: 2rem 4rem 2rem 3rem;
+			padding: 2rem 5rem 2rem 3rem;
 			font-size: 3.4rem;
 			line-height: 1.5;
 			color: #000000;
@@ -747,7 +770,7 @@ section.freq-ask {
 	}
 }
 footer {
-	padding: 14rem 0 4.3rem;
+	padding: 12rem 0 4.3rem;
 	.companies {		
 		margin-bottom: 7.4rem;
 	    padding-left: 2rem;
@@ -769,9 +792,8 @@ footer {
 				height: 5.4rem;
 				background-color: #e5e5e5;
 				border-radius: 1.5px;
-				@include mobile {
-					
-				}
+				top: 50%;
+			    transform: translateY(-50%);
 			}
 			&:last-child {
 				&:after {

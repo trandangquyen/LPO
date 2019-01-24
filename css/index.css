@@ -4,7 +4,7 @@
 
 .slider {
   width: 100%;
-  margin: 10rem auto; }
+  margin: 0 auto 7rem; }
 
 .slick-slide {
   margin: 0px 20px; }
@@ -18,7 +18,7 @@
 
 .slick-slide {
   transition: all ease-in-out .3s;
-  opacity: .2; }
+  opacity: .8; }
 
 .slick-active {
   opacity: .5; }
@@ -28,6 +28,9 @@
   @media (max-width: 767px) {
     .slick-slide {
       max-width: 280px; } }
+  @media screen and (max-width: 320px) {
+    .slick-slide {
+      max-width: 250px; } }
 
 /* the parent */
 .slick-list {
@@ -35,6 +38,9 @@
   @media (max-width: 767px) {
     .slick-list {
       margin: 0 -15px; } }
+  @media screen and (max-width: 320px) {
+    .slick-list {
+      margin: 0 -10px; } }
 
 /* the slides */
 .slick-slide {
@@ -42,24 +48,25 @@
   @media (max-width: 767px) {
     .slick-slide {
       margin: 0 15px; } }
+  @media screen and (max-width: 320px) {
+    .slick-slide {
+      margin: 0 10px; } }
 
 .slick-current {
   opacity: 1; }
 
 .hero-banner {
-  position: relative; }
+  position: relative;
+  line-height: 0; }
   .hero-banner .logo {
     position: absolute;
     width: 100%;
-    bottom: 6px;
+    bottom: 0;
     left: 0;
     height: 26.2%;
     opacity: 0.8;
     background-color: #000000;
     text-align: center; }
-    @media (max-width: 767px) {
-      .hero-banner .logo {
-        bottom: 4px; } }
     .hero-banner .logo > a {
       line-height: 0;
       display: inline-block;
@@ -101,7 +108,8 @@ section.customize {
   section.customize .sec-desc {
     text-align: center;
     font-size: 4rem;
-    margin-top: -3rem; }
+    margin-top: -5.5rem;
+    margin-bottom: 0.5rem; }
     @media (max-width: 767px) {
       section.customize .sec-desc {
         margin-top: -3rem; } }
@@ -119,7 +127,8 @@ section.customize {
   section.customize .person-title {
     color: #c88a04;
     font-size: 2.8rem;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-top: 0.5rem; }
 
 section.edu-process .elite-tabs {
   border: 2px solid #ededed; }
@@ -182,19 +191,10 @@ section.edu-process .tab-content {
       border-bottom: 2.6rem solid rgba(0, 0, 0, 0.8); }
     section.edu-process .tab-content .tab-pane#elite:after {
       left: 13.8%; }
-      @media (max-width: 767px) {
-        section.edu-process .tab-content .tab-pane#elite:after {
-          left: 9.8%; } }
     section.edu-process .tab-content .tab-pane#elite-grow:after {
       left: 46.7%; }
-      @media (max-width: 767px) {
-        section.edu-process .tab-content .tab-pane#elite-grow:after {
-          left: 42.7%; } }
     section.edu-process .tab-content .tab-pane#elite-train:after {
       left: 79.8%; }
-      @media (max-width: 767px) {
-        section.edu-process .tab-content .tab-pane#elite-train:after {
-          left: 75.8%; } }
 
 section.special-sv {
   text-align: center;
@@ -220,7 +220,7 @@ section.special-sv {
       font-weight: 600; }
 
 .part-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.6rem; }
   .part-title img {
     max-width: 17.8rem; }
 
@@ -229,18 +229,17 @@ section.special-sv {
   font-weight: 500;
   text-align: justify;
   color: #000000;
-  margin-bottom: 7rem; }
+  margin-bottom: 7rem;
+  display: inline-block;
+  background: #D9D9D9; }
 
 .carousel .slides .slideItem {
   border-radius: 1.5rem;
   box-shadow: 10px 10px 3rem 6px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
-  width: 90.9% !important; }
-  .carousel .slides .slideItem img {
-    width: 100% !important; }
+  background-color: #ffffff; }
 
 .slick-list {
-  padding: 5rem 0 10rem !important; }
+  padding: 5rem 0 9.5rem !important; }
 
 .desc-photo {
   margin-bottom: 3rem; }
@@ -250,22 +249,21 @@ section.part-1 {
 
 section.part-2 .slick-center {
   transform: scale(1.08); }
-section.part-2 .slick-slide {
-  opacity: 1; }
 section.part-2 .part-title {
-  padding-left: 4rem;
+  margin-left: 4rem;
   text-align: left; }
 section.part-2 .part-caption {
-  padding-left: 4rem; }
+  margin-left: 4rem;
+  margin-bottom: 4.7rem; }
 section.part-2 .tt-item {
-  text-align: center;
+  text-align: left;
   border-radius: 15px;
   box-shadow: 8px 8px 3rem 4px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
-  padding: 5rem 3.5rem 10rem; }
+  padding: 5rem 3.5rem 5rem; }
   @media (max-width: 767px) {
     section.part-2 .tt-item {
-      padding: 5rem 3.5rem 3.2rem; } }
+      padding: 5rem 1.8rem 3.2rem; } }
   section.part-2 .tt-item .img-wrap {
     padding: 2px;
     background: linear-gradient(to right, #7c4b0a, #c59517, #c78903, #e7c85e, #f4e182, #c59517, #f1c870);
@@ -282,8 +280,8 @@ section.part-2 .tt-item {
     font-weight: 600;
     text-align: center;
     color: #000000;
-    margin-bottom: 4.5rem;
-    margin-top: 2.5rem; }
+    margin-bottom: 3.5rem;
+    margin-top: 1.6rem; }
     @media (max-width: 767px) {
       section.part-2 .tt-item .tt-name {
         font-size: 2.7rem;
@@ -294,22 +292,37 @@ section.part-2 .tt-item {
     line-height: 1.71;
     letter-spacing: 1px;
     text-align: justify;
-    color: #2f2f2f; }
+    color: #2f2f2f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; }
+    section.part-2 .tt-item .tt-profile.collapse {
+      overflow: initial;
+      text-overflow: initial;
+      display: initial;
+      -webkit-line-clamp: initial;
+      -webkit-box-orient: initial; }
+section.part-2 .tt-footer {
+  text-align: right;
+  margin-top: 10px; }
 section.part-2 .view-more {
-  float: right;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #1a73e8;
   position: relative;
-  padding-right: 2.8rem; }
+  padding-right: 2.1rem; }
   section.part-2 .view-more:after {
     content: '';
     position: absolute;
     right: 0;
-    top: 1.2rem;
+    top: 0.7rem;
     width: 1.2rem;
     height: 1.2rem;
     background: url(../images/icon_arrow_blue.svg) center no-repeat;
     transform: rotate(180deg); }
+  section.part-2 .view-more.active:after {
+    transform: rotate(0); }
 
 section.part-3 {
   padding: 0 4rem;
@@ -358,8 +371,6 @@ section.part-5 {
 
 section.success .slick-center {
   transform: scale(1.08); }
-section.success .slick-slide {
-  opacity: 1; }
 section.success .std-item {
   text-align: center;
   width: 56rem;
@@ -396,13 +407,16 @@ section.success .intro-wp {
         font-size: 2.35rem;
         line-height: 1.31; } }
     section.success .intro-wp li span {
-      width: 27%;
+      width: 33%;
       display: inline-block;
       position: relative;
       margin-right: 3.0rem; }
       @media (max-width: 767px) {
         section.success .intro-wp li span {
           width: 33.5%; } }
+      @media screen and (max-width: 320px) {
+        section.success .intro-wp li span {
+          width: 24.5%; } }
       section.success .intro-wp li span:after {
         content: ":";
         position: absolute;
@@ -455,6 +469,8 @@ section.video .video-wp {
 section.edu-program {
   background-color: #f2f2f2;
   padding-top: 50px; }
+  section.edu-program .big-title {
+    margin-bottom: 0; }
   section.edu-program .slick-center {
     transform: scale(1.08); }
   section.edu-program .slider {
@@ -466,7 +482,8 @@ section.edu-program {
     font-size: 2.8rem;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #2f2f2f; }
+    color: #2f2f2f;
+    margin-bottom: 3.5rem; }
   section.edu-program .offer-item {
     width: 54rem;
     height: 70.8rem;
@@ -485,6 +502,8 @@ section.edu-program {
     @media (max-width: 767px) {
       section.edu-program .slick-slide img {
         max-width: 100%; } }
+  section.edu-program .slick-list {
+    padding: 5rem 0 8rem !important; }
 
 section.schools {
   padding: 9rem 4rem; }
@@ -545,7 +564,8 @@ section.schools {
     line-height: 12rem;
     font-size: 3.4rem;
     letter-spacing: 1px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-top: 2rem; }
 
 section.freq-ask .panel-default:first-child .panel-heading {
   border-top: none; }
@@ -561,7 +581,7 @@ section.freq-ask .panel-group .panel {
     margin-top: -1px; }
 section.freq-ask .panel-title a {
   display: block;
-  padding: 2rem 4rem 2rem 3rem;
+  padding: 2rem 5rem 2rem 3rem;
   font-size: 3.4rem;
   line-height: 1.5;
   color: #000000;
@@ -588,7 +608,7 @@ section.freq-ask .panel-body {
   padding: 2.7rem 3rem; }
 
 footer {
-  padding: 14rem 0 4.3rem; }
+  padding: 12rem 0 4.3rem; }
   footer .companies {
     margin-bottom: 7.4rem;
     padding-left: 2rem; }
@@ -608,7 +628,9 @@ footer {
         width: 0.3rem;
         height: 5.4rem;
         background-color: #e5e5e5;
-        border-radius: 1.5px; }
+        border-radius: 1.5px;
+        top: 50%;
+        transform: translateY(-50%); }
       footer .companies li:last-child:after {
         content: initial; }
       footer .companies li:nth-child(2) {
