@@ -79,6 +79,14 @@
             $(this).parent().siblings('.tt-profile').toggleClass('collapse');
         });
     }
+    function hoverCircleActive(){
+        $(".puls-circle .text").mouseenter(function(){
+            $(this).parent().addClass('active');  
+        });
+        $(".puls-circle .text").mouseleave(function(){
+            $(this).parent().removeClass('active');  
+        });
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -91,10 +99,15 @@
         addClassActiveTab();
         windowResize();
         expandTutorProfile();
+        hoverCircleActive();
         setTimeout(function(){ 
            $('section.part-2 .tt-item .tt-profile').css({
                'max-height': '245px'
            });
+           $('section.success .std-item .std-profile').css({
+               'max-height': '143px'
+           });
         }, 100);
+
     });
 })(jQuery);
