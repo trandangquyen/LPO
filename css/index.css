@@ -915,4 +915,26 @@ footer {
     text-align: justify;
     color: #2f2f2f; }
 
+.mobile-call {
+  width: 12.5rem;
+  height: 12.5rem;
+  display: block;
+  position: fixed;
+  background: #000;
+  border-radius: 50%;
+  bottom: 0;
+  line-height: 12.5rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  overflow: hidden;
+  right: 2.3rem; }
+  .mobile-call img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    max-width: 30%; }
+
 /*# sourceMappingURL=index.css.map */
