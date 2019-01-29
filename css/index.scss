@@ -240,11 +240,7 @@ section.edu-process {
 			}
 		}
 	}
-	.tab-content {
-		background: url(../images/select_bg_image1.png) center no-repeat;
-		@include mobile {
-			background-size: cover;
-		}
+	.tab-content {		
 		.tab-pane {
 			padding: 5rem;
 			font-size: 2.8rem;
@@ -252,9 +248,33 @@ section.edu-process {
   			letter-spacing: 1px;
   			text-align: justify;
   			color: #ffffff;
-			background-color: rgba(0, 0, 0, 0.8);
-			position: relative;
+			background-color: #000;
+			position: relative;			
 			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				opacity: 0.2;
+				background: url(../images/select_bg_image1.png) center no-repeat;
+				@include mobile {
+					background-size: cover;
+				}
+			}
+			&:nth-child(2) {
+				&:after {
+					background: url(../images/select_bg_image2.png) center no-repeat;
+				}
+			}
+			&:nth-child(3) {
+				&:after {
+					background: url(../images/select_bg_image3.png) center no-repeat;
+				}
+			}
+			&:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -266,18 +286,19 @@ section.edu-process {
 			    border-right: 2.5rem solid transparent;
 			    border-bottom: 2.6rem solid rgba(0, 0, 0, 0.8);
 			}
+			
 			&#elite {
-				&:after {
+				&:before {
 					left: 13.8%;
 				}		    
 			}
 			&#elite-grow {
-				&:after {
+				&:before {
 					left: 46.7%;
 				}			
 			}
 			&#elite-train {
-				&:after {
+				&:before {
 					left: 79.8%;
 				}			
 			}
@@ -754,7 +775,7 @@ section.success {
  				position: relative;
  				margin-right: 3.0rem;
  				@include mobile {
- 					width: 33.5%;
+				    width: 31.5%;
  				}
  				@media screen and (max-width: 320px)  {
 					width: 24.5%;
@@ -919,14 +940,14 @@ section.schools {
 			font-size: 3.4rem;
 			font-weight: 500;
 			@include mobile {
-			    font-size: 3rem;
+			    font-size: 2.9rem;
 			}
 		}
 		.name-en {
 			font-size: 2.8rem;
 			color: #2f2f2f;
 			@include mobile {
-			    font-size: 2.4rem;
+			    font-size: 2.3rem;
 			}
 		}
 	}
@@ -969,7 +990,7 @@ section.freq-ask {
 	.panel-title {
 		a {
 			display: block;
-			padding: 2rem 5rem 2rem 3rem;
+			padding: 2rem 5.5rem 2rem 3rem;
 			font-size: 3.4rem;
 			line-height: 1.5;
 			color: #000000;
@@ -1107,6 +1128,7 @@ footer {
 	padding: 4rem;
 	.intro-wp {
 		text-align: left;
+		margin-bottom: 3rem;
 		li {
 			font-size: 2.8rem;
 			font-weight: 500;
@@ -1148,6 +1170,9 @@ footer {
 		letter-spacing: 1px;
 		text-align: justify;
 		color: #2f2f2f;
+		p {
+			margin-bottom: 6.9rem;
+		}
 	}
 }
 .mobile-call {
@@ -1157,12 +1182,25 @@ footer {
     position: fixed;
     background: #000;
     border-radius: 50%;
-    bottom: 0;
+    bottom: 20px;
     line-height: 12.5rem;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
     z-index: 100;
-    overflow: hidden;
 	right: 2.3rem;
+	&:before {
+	    content: '';
+	    position: relative;
+	    display: block;
+	    width: 200%;
+	    height: 200%;
+	    box-sizing: border-box;
+	    margin-left: -50%;
+	    margin-top: -50%;
+	    border-radius: 50%;
+	    background-color: rgba(0, 0, 0, 0.5);
+	    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+	    opacity: 0;
+	  }
     img {
 	    position: absolute;
 	    top: 50%;

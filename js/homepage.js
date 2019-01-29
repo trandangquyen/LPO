@@ -87,6 +87,19 @@
             $(this).parent().removeClass('active');  
         });
     }
+    function changeTextExpand() {
+        var currentText ='展开';
+        $('.tt-footer .view-more').click(function(event) {
+            event.preventDefault();
+            $(this).toggleClass('expand');
+            if($(this).hasClass('expand')){
+                $(this).text('收起');
+            }
+            else{
+                $(this).text(currentText);
+            }
+        });
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -100,6 +113,7 @@
         windowResize();
         expandTutorProfile();
         hoverCircleActive();
+        changeTextExpand();
         setTimeout(function(){ 
            $('section.part-2 .tt-item .tt-profile').css({
                'max-height': '245px'
