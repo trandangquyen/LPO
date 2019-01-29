@@ -36,23 +36,22 @@
             slidesPerScroll: 3
         });
     }
-    function runSlickSlider() {
-        $(".tutor-slider,.std-slider,.offer-slider").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: false,
-            centerMode: true,
-            centerPadding: '80px',
-            focusOnSelect: true,
-            variableWidth: true
+    function runOwlCarousel() {
+        var windowWidth = $(window).width();
+        var itemMargin = 0;
+        itemMargin = (windowWidth <= 480) ? 20 : 40;
+        $('.tutor-slider,.std-slider,.offer-slider').owlCarousel({
+            center: true,
+            items: 1.3,
+            loop: true,
+            margin: itemMargin,
+            onDragged: callback
         });
-        // On swipe event
-        $('.tutor-slider').on('swipe', function(event, slick, direction){
-            console.log('helllo');
-            $(this).find('.tt-profile.collapse').removeClass('collapse');
-            $(this).find('.view-more.active').removeClass('active');
-        });
+    }
+    function callback(event) {
+        console.log('helllooo');
+        $('.owl-item .collapse').removeClass('collapse');
+        $('.owl-item .view-more.active').removeClass('active').text('展开');
     }
     function addClassActiveTab() {
         $('.elite-tabs li').click(function(event) {
@@ -108,7 +107,7 @@
     $(document).ready(function($) {
         // runSlider();
         runCarousel();
-        runSlickSlider();
+        runOwlCarousel();
         addClassActiveTab();
         // windowResize();
         expandTutorProfile();

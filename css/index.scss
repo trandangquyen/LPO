@@ -25,68 +25,6 @@ $desktop-width: 1200px;
 		overflow: hidden;
 	}
 }
-.slider {
-    width: 100%;
-    margin: 0 auto 7rem;
-}
-
-.slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .8;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-
-.slick-slide {
-    max-width: 520px;
-    @include mobile {
-    	max-width: 280px;
-    }
-    @media screen and (max-width: 320px)  {
-		max-width: 250px;
-	}
-}
-
-/* the parent */
-.slick-list {
-	margin: 0 -32px;
-	@include mobile {
-		margin: 0 -15px;
-	}
-	@media screen and (max-width: 320px)  {
-		margin: 0 -10px;
-	}
-}
-/* the slides */
-.slick-slide {
-	margin: 0 32px;
-	@include mobile {
-		margin: 0 15px;
-	}
-	@media screen and (max-width: 320px)  {
-		margin: 0 10px;
-	}
-}
-.slick-current {
-  opacity: 1;
-}
 .hero-banner {
     position: relative;
     line-height: 0;
@@ -361,23 +299,21 @@ section.part-1 {
 	padding-left: 4rem;
 }
 section.part-2 {
-	.slick-center {
-	    transform: scale(1.08);
-	}
 	.part-title {
 		margin-left: 4rem;
 		text-align: left;
 	}
 	.part-caption {
 		margin-left: 4rem;
-		margin-bottom: 4.7rem;
+		margin-bottom: 2rem;
 	}
 	.tt-item {
 		text-align: left;
 		border-radius: 15px;
 		box-shadow: 8px 8px 3rem 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
-		padding: 5rem 3.5rem 5rem;
+		padding: 5rem 3.5rem;
+	    margin-bottom: 7rem;
 		@include mobile {
 		    padding: 5rem 1.8rem 3.2rem;
 		}
@@ -429,7 +365,7 @@ section.part-2 {
 	}
 	.tt-footer {
 		text-align: right;
-		margin-top: 10px;
+		margin-top: 2rem;
 	}
 	.view-more {
 		font-size: 2.8rem;
@@ -725,7 +661,7 @@ section.part-5 {
 	font-size: 4rem;
 	letter-spacing: 1px;
   	color: #c88a04;
-  	margin-bottom: 7rem;
+  	margin-bottom: 2rem;
 }
 section.success {
 	.slick-center {
@@ -733,12 +669,12 @@ section.success {
 	}
 	.std-item {
 		text-align: center;
-		width: 56rem;
 		height: auto;
 		border-radius: 15px;
 		box-shadow: 8px 8px 30px 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
 		padding: 5rem 3.5rem;
+		margin-bottom: 7rem;
 		@include mobile {
 			padding: 3.8rem 1.8rem;
 		}
@@ -750,9 +686,6 @@ section.success {
 		width: 14rem;
 		height: 14rem;
 		margin: 0 auto 5rem;
-		@include mobile {
-		    margin: 0 auto 1.8rem;
-		}
 		img {
 			border-radius: 50%;			
 			background: #fff;
@@ -760,6 +693,7 @@ section.success {
 	}
 	.intro-wp {
 		text-align: left;
+		margin-bottom: 3rem;
 		li {
 			font-size: 2.8rem;
 			font-weight: 500;
@@ -770,24 +704,33 @@ section.success {
 		        line-height: 1.31;
  			}
  			span {
- 				width: 32%;
- 				display: inline-block;
- 				position: relative;
- 				margin-right: 3.0rem;
- 				@media screen and (max-width: 320px)  {
-					width: 24.5%;
-				}
- 				&:after {
- 					content: ":";
- 					position: absolute;
- 					right: -12px;
-				    top: -2px;
- 					font-size: 2.8rem;
-  					font-weight: 500;
+ 				&:nth-child(1) {
+ 					display: inline-block;
+	 				position: relative;
+	 				margin-right: 3.0rem;
+ 					width: 33%;
+ 					float: left;
+ 					@media screen and (max-width: 320px)  {
+						width: 25.5%;
+					}
+ 					&:after {
+	 					content: ":";
+	 					position: absolute;
+	 					right: -12px;
+					    top: -2px;
+	 					font-size: 2.8rem;
+	  					font-weight: 500;
+	 				}
  				}
+ 				&:nth-child(2) {
+					width: 57%;
+ 					float: left;
+ 					overflow: hidden;
+ 				}	
  			}
  			.right {
  				float: right;
+			    padding-right: 0.9rem;
  			}
 		}
 	}
@@ -802,6 +745,7 @@ section.success {
 	    display: -webkit-box;
 	    -webkit-line-clamp: 3;
 	    -webkit-box-orient: vertical;
+	    clear: both;
 	}
 	.view-more {
 		font-size: 2.8rem;
@@ -848,26 +792,15 @@ section.edu-program {
 	.big-title {
 		margin-bottom: 0;
 	}
-	.slick-center {
-	    transform: scale(1.08);
-	}
-	.slider {
-		margin: 0.2rem 0 0;
-	}
-	.slick-slide {
-		opacity: 1;
-	}
 	.sec-caption {
 		text-align: center;
 		font-size: 2.8rem;
 		font-weight: 500;
 		letter-spacing: 1px;
 		color: #2f2f2f;
-		margin-bottom: 3.5rem;
+		margin-bottom: 1.5rem;
 	}
 	.offer-item {
-		width: 54rem;
-		height: 70.8rem;
 		border-radius: 15px;
 		box-shadow: 8px 8px 30px 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
@@ -878,18 +811,13 @@ section.edu-program {
 	    	height: auto;
 	    }
 	}
-	.slick-slide img {
-		width: initial;
-		max-width: 500.4px;
+	.offer-item img {
 		margin: 0 auto;
 		border-radius: 15px;
 		max-height: 100%;
 		@include mobile {
 			max-width: 100%;
 		}
-	}
-	.slick-list {
-	    padding: 5rem 0 8rem !important;
 	}
 }
 section.schools {
@@ -1211,4 +1139,15 @@ footer {
 	    max-width: 30%;
     }
 }
-
+.owl-stage-outer {
+	padding: 5rem 0;
+}
+.owl-carousel {
+	.owl-item {
+	    transform: scaleY(0.92);
+	    transition: all 0.35s cubic-bezier(0, 0, 0.03, 1.06);
+		&.center {
+			transform: scaleY(1);
+		}
+	}
+}
