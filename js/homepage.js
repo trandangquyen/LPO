@@ -110,7 +110,7 @@
         runCarousel();
         runSlickSlider();
         addClassActiveTab();
-        windowResize();
+        // windowResize();
         expandTutorProfile();
         hoverCircleActive();
         changeTextExpand();

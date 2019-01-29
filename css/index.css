@@ -182,14 +182,14 @@ section.edu-process .tab-content .tab-pane {
     top: 0;
     bottom: 0;
     opacity: 0.2;
-    background: url(../images/select_bg_image1.png) center no-repeat; }
+    background: url(../images/select_bg_image1.jpg) center no-repeat; }
     @media (max-width: 767px) {
       section.edu-process .tab-content .tab-pane:after {
         background-size: cover; } }
   section.edu-process .tab-content .tab-pane:nth-child(2):after {
-    background: url(../images/select_bg_image2.png) center no-repeat; }
+    background: url(../images/select_bg_image2.jpg) center no-repeat; }
   section.edu-process .tab-content .tab-pane:nth-child(3):after {
-    background: url(../images/select_bg_image3.png) center no-repeat; }
+    background: url(../images/select_bg_image3.jpg) center no-repeat; }
   section.edu-process .tab-content .tab-pane:before {
     content: '';
     display: block;
@@ -598,13 +598,10 @@ section.success .intro-wp {
         font-size: 2.35rem;
         line-height: 1.31; } }
     section.success .intro-wp li span {
-      width: 33%;
+      width: 32%;
       display: inline-block;
       position: relative;
       margin-right: 3.0rem; }
-      @media (max-width: 767px) {
-        section.success .intro-wp li span {
-          width: 31.5%; } }
       @media screen and (max-width: 320px) {
         section.success .intro-wp li span {
           width: 24.5%; } }
@@ -752,7 +749,7 @@ section.schools {
       color: #2f2f2f; }
       @media (max-width: 767px) {
         section.schools .sch-name .name-en {
-          font-size: 2.3rem; } }
+          font-size: 2.2rem; } }
   section.schools .see-more {
     display: block;
     text-align: center;
@@ -835,6 +832,9 @@ footer {
         content: initial; }
       footer .companies li:nth-child(2) {
         padding-top: 8px; }
+        @media (max-width: 767px) {
+          footer .companies li:nth-child(2) {
+            padding-top: 4px; } }
   footer .copy-right {
     font-size: 2.4rem;
     text-align: center;
