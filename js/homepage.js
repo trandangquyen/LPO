@@ -49,7 +49,6 @@
         });
     }
     function callback(event) {
-        console.log('helllooo');
         $('.owl-item .collapse').removeClass('collapse');
         $('.owl-item .view-more.active').removeClass('active').text('展开');
     }
