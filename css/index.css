@@ -241,6 +241,8 @@ section.special-sv {
 
 section.part-1 {
   padding-left: 4rem; }
+  section.part-1 .carousel .slides {
+    touch-action: none; }
   @media (max-width: 767px) {
     section.part-1 {
       margin-bottom: 1.6rem; } }
@@ -1082,7 +1084,7 @@ footer {
   width: 100%;
   text-align: center;
   height: 10rem;
-  line-height: 10rem;
+  line-height: 9rem;
   font-size: 3.6rem;
   color: #000000;
   border: none;

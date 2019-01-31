@@ -336,6 +336,9 @@ section.special-sv {
 	margin-bottom: 3rem;
 }
 section.part-1 {
+	.carousel .slides {
+	    touch-action: none;
+	}
 	padding-left: 4rem;
 	@include mobile {
 	    margin-bottom: 1.6rem;
@@ -1343,7 +1346,7 @@ footer {
 		width: 100%;
 		text-align: center;
 		height: 10rem;
-		line-height: 10rem;
+		line-height: 9rem;
 		font-size: 3.6rem;
 	  	color: #000000;
 	  	border: none;
