@@ -100,8 +100,7 @@
     }
     function randomShowText() {
         setInterval(function(){
-            var random = Math.floor(Math.random()*13);
-            console.log(random);
+            var random = Math.floor(Math.random()*12);
             $(".puls-circle").eq(random).addClass('active').siblings().removeClass('active'); 
         }, 3000);
     }
