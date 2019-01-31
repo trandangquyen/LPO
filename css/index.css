@@ -912,4 +912,7 @@ footer {
   .owl-carousel .owl-item.center {
     transform: scaleY(1); }
 
+.carousel .nextButton, .carousel .prevButton {
+  display: none; }
+
 /*# sourceMappingURL=index.css.map */

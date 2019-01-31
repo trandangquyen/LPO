@@ -32,7 +32,7 @@
             left: 0,
             shadow: false,
             buttonNav: 'none',
-            directionNav: false,
+            directionNav: true,
             slidesPerScroll: 3
         });
     }

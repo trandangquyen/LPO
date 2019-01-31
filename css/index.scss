@@ -1149,5 +1149,10 @@ footer {
 		&.center {
 			transform: scaleY(1);
 		}
+	}	
+}
+.carousel {
+	.nextButton,.prevButton {
+		display: none;
 	}
 }
