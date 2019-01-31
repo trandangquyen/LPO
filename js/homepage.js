@@ -98,6 +98,13 @@
             }
         });
     }
+    function randomShowText() {
+        setInterval(function(){
+            var random = Math.floor(Math.random()*13);
+            console.log(random);
+            $(".puls-circle").eq(random).addClass('active').siblings().removeClass('active'); 
+        }, 3000);
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -112,6 +119,7 @@
         expandTutorProfile();
         hoverCircleActive();
         changeTextExpand();
+        randomShowText();
         setTimeout(function(){ 
            $('section.part-2 .tt-item .tt-profile').css({
                'max-height': '245px'

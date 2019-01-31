@@ -62,6 +62,12 @@ $desktop-width: 1200px;
 			line-height: 0;
 		    min-height: 94px;
 		    margin-bottom: 1rem;
+		    @include mobile {
+	    	    min-height: 59px;
+		    }
+		    @media screen and (max-width: 320px) {
+		    	min-height: 51px;
+		    }
 		}
 		&:nth-child(1) {
 			a {
@@ -73,16 +79,27 @@ $desktop-width: 1200px;
 				padding-top: 2.9rem;
 			}
 		}
+		&:nth-child(3) {
+			a {
+				padding-top: 1rem;
+			}
+			img {
+				max-width: 40%;
+			}
+		}
 	}
 	.caption {
 		font-size: 1.8rem;
 		color: #000000;
+		@include mobile {
+			font-size: 1.5rem;
+		}
 	}
 }
 section.customize {
 	margin-bottom: 9.1rem;
 	.big-img-title {
-	    padding: 0 20px;
+	    padding: 0 2rem;
 	}
 	.big-img-title {
 		text-align: center;
@@ -132,9 +149,13 @@ section.edu-process {
 				letter-spacing: 1px;
 				color: #000000;
 				display: block;
-				padding: 3.6rem 0;
+				padding: 2.9rem 0;
 				background: #ededed;
 				position: relative;
+				@include mobile {
+					font-size: 2.6rem;
+					padding: 1.8rem 0;
+				}
 				&:after {
 					content: '';
 					position: absolute;
@@ -187,7 +208,10 @@ section.edu-process {
   			text-align: justify;
   			color: #ffffff;
 			background-color: #000;
-			position: relative;			
+			position: relative;
+			@include mobile {
+				font-size: 2.4rem;	
+			}		
 			&:after {
 				content: '';
 				display: block;
@@ -196,7 +220,7 @@ section.edu-process {
 				right: 0;
 				top: 0;
 				bottom: 0;
-				opacity: 0.2;
+				opacity: 0.35;
 				background: url(../images/select_bg_image1.jpg) center no-repeat;
 				@include mobile {
 					background-size: cover;
@@ -222,7 +246,7 @@ section.edu-process {
 			    height: 0;
 			    border-left: 2.5rem solid transparent;
 			    border-right: 2.5rem solid transparent;
-			    border-bottom: 2.6rem solid rgba(0, 0, 0, 0.8);
+			    border-bottom: 2.6rem solid rgba(0, 0, 0, 0.65);
 			}
 			
 			&#elite {
@@ -246,9 +270,13 @@ section.edu-process {
 section.special-sv {
 	text-align: center;
     margin-top: 27.6rem;
-    margin-bottom: 15rem;
+    margin-bottom: 14rem;
 	background-color: #000;
 	padding: 0 4.5rem 6.5rem;
+	@include mobile {
+	    margin-top: 25.3rem;
+	    margin-bottom: 9.5rem;
+	}
 	img {
 		margin-bottom: 6.5rem;
 		padding-bottom: 3rem;
@@ -262,10 +290,16 @@ section.special-sv {
 		letter-spacing: 1px;
 		text-align: justify;
 		color: #ffffff;
+		@include mobile {
+			font-size: 2.4rem;
+		}
 		span {
 			color: #c88a04;
 			font-size: 3.6rem;
 			font-weight: 600;
+			@include mobile {
+				font-size: 2.6rem;
+			}
 		}
 	}
 }
@@ -283,6 +317,12 @@ section.special-sv {
   	margin-bottom: 7rem;
   	display: inline-block;
     background: #D9D9D9;
+    background-image: linear-gradient(to right, #7c4b0a, #f1c870);
+    padding: 0 8px;
+    @include mobile {
+    	margin-bottom: 5.5rem;
+    	font-size: 2.8rem;
+    }
 }
 .carousel .slides .slideItem {
 	border-radius: 1.5rem;
@@ -297,15 +337,24 @@ section.special-sv {
 }
 section.part-1 {
 	padding-left: 4rem;
+	@include mobile {
+	    margin-bottom: 1.6rem;
+	}
+	@media screen and (max-width: 320px) {
+		margin-bottom: 9.5rem;
+	}
 }
 section.part-2 {
 	.part-title {
 		margin-left: 4rem;
 		text-align: left;
+		@include mobile {
+			margin-bottom: 1.6rem;
+		}
 	}
 	.part-caption {
 		margin-left: 4rem;
-		margin-bottom: 2rem;
+		margin-bottom: 0.5rem;
 	}
 	.tt-item {
 		text-align: left;
@@ -313,7 +362,7 @@ section.part-2 {
 		box-shadow: 8px 8px 3rem 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
 		padding: 5rem 3.5rem;
-	    margin-bottom: 7rem;
+	    margin-bottom: 5rem;
 		@include mobile {
 		    padding: 5rem 1.8rem 3.2rem;
 		}
@@ -354,6 +403,9 @@ section.part-2 {
 		    display: -webkit-box;
 		    -webkit-line-clamp: 5;
 		    -webkit-box-orient: vertical;
+		    @include mobile {
+		    	font-size: 2.4rem;
+		    }
 		    &.collapse {
 		    	overflow: initial;
 			    text-overflow: initial;
@@ -372,6 +424,9 @@ section.part-2 {
 		color: #1a73e8;
 		position: relative;
 		padding-right: 2.1rem;
+		@include mobile {
+			font-size: 2.4rem;
+		}
 		&:after {
 			content: '';
 			position: absolute;
@@ -393,6 +448,9 @@ section.part-3 {
 	padding: 0 4rem;
 	margin-bottom: 14rem;
 	position: relative;
+	@include mobile {
+	    margin-bottom: 9rem;
+	}
 	.text {
 		width: 100%;
 	    height: 100%;
@@ -447,8 +505,8 @@ section.part-3 {
 		position: absolute;
 		width: 4.2rem;
 		height: 4.2rem;
-	    top: 22.8%;
-	    left: 0;
+        top: 25.9%;
+	    left: 45.2%;
 	}
 	.cn-flag {
 		position: absolute;
@@ -620,17 +678,26 @@ section.part-3 {
 section.part-4 {
 	padding: 0 4rem;
 	margin-bottom: 14rem;
+	@include mobile {
+		margin-bottom: 8.8rem;
+	}
 	.desc {
 		font-size: 2.8rem;
 		line-height: 1.71;
 	  	letter-spacing: 1px;
 	  	text-align: justify;
 	  	color: #000000;
+	  	@include mobile {
+	  		font-size: 2.4rem;
+	  	}
 	}
 }
 section.part-5 {
 	padding: 0 4rem;
 	margin-bottom: 14rem;
+	@include mobile {
+		margin-bottom: 8rem;
+	}
 	ul {
 		li {
 			font-size: 2.8rem;
@@ -656,7 +723,8 @@ section.part-5 {
 }
 .sec-title {
 	height: 13rem;
-	padding: 3.7rem 4rem;
+	line-height: 13rem;
+	padding: 0 4rem;
 	background-color: #e5e5e5;
 	font-size: 4rem;
 	letter-spacing: 1px;
@@ -674,9 +742,9 @@ section.success {
 		box-shadow: 8px 8px 30px 4px rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
 		padding: 5rem 3.5rem;
-		margin-bottom: 7rem;
+		margin-bottom: 5rem;
 		@include mobile {
-			padding: 3.8rem 1.8rem;
+			padding: 5rem 1.8rem;
 		}
 	}
 	.img-wrap {
@@ -685,23 +753,26 @@ section.success {
 		border-radius: 50%;
 		width: 14rem;
 		height: 14rem;
-		margin: 0 auto 5rem;
+		margin: 0 auto 2rem;
 		img {
 			border-radius: 50%;			
 			background: #fff;
 		}
 	}
 	.intro-wp {
-		text-align: left;
+		text-align: center;
 		margin-bottom: 3rem;
 		li {
 			font-size: 2.8rem;
 			font-weight: 500;
-			line-height: 1.71;
+			line-height: 1.57;
  			letter-spacing: 1px;
- 			@include mobile {
-			    font-size: 2.35rem;
-		        line-height: 1.31;
+ 			position: relative;
+ 			&:nth-child(1) {
+ 				font-weight: 600;
+ 				font-size: 3.4rem;
+			    margin-bottom: 0.7rem;
+		        padding-right: 20px;
  			}
  			span {
  				&:nth-child(1) {
@@ -733,6 +804,26 @@ section.success {
 			    padding-right: 0.9rem;
  			}
 		}
+		i {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background: url(../images/icon_boy.png) center no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 1px;
+			&.girl {
+				background: url(../images/icon_girl.png) center no-repeat;
+				background-size: contain;
+			}
+			&.boy {
+				transform: rotate(3deg);
+			}
+			@include mobile {
+				width: 30px;
+				height: 30px;
+			}
+		}
 	}
 	.std-profile {
 		font-size: 2.8rem;
@@ -746,6 +837,9 @@ section.success {
 	    -webkit-line-clamp: 3;
 	    -webkit-box-orient: vertical;
 	    clear: both;
+	    @include mobile {
+	    	font-size: 2.4rem;
+	    }
 	}
 	.view-more {
 		font-size: 2.8rem;
@@ -754,15 +848,18 @@ section.success {
 		position: relative;
 		padding-right: 2.8rem;
 		margin-top: 1.7rem;
+		@include mobile {
+			font-size: 2.4rem;
+		}
 		&:after {
 			content: '';
 			position: absolute;
 		    right: 0;
-	        top: 1.6rem;
+            top: 50%;
 		    width: 1.2rem;
 		    height: 1.2rem;
 			background: url(../images/icon_arrow_blue.svg) center no-repeat;
-			transform: rotate(90deg);
+			transform: translateY(-50%) rotate(90deg);
 		}
 	}
 }
@@ -776,19 +873,19 @@ section.video {
 }
 .big-title {
 	color: #c88a04;
-	font-size: 6rem;
+	font-size: 4rem;
 	letter-spacing: 1px;
 	text-align: center;
 	margin-bottom: 1rem;
 	height: initial;
 	background-color: initial;
-	@include mobile {
-	    font-size: 5rem;
-	}
 }
 section.edu-program {
 	background-color: #f2f2f2;
 	padding-top: 50px;
+	.owl-stage-outer {
+		padding: 5rem 0 0;
+	}
 	.big-title {
 		margin-bottom: 0;
 	}
@@ -806,6 +903,7 @@ section.edu-program {
 		background-color: #ffffff;
 	    overflow: hidden;
         padding: 2px;
+        margin-bottom: 3.3rem;
 	    background: linear-gradient(to right, #7c4b0a, #c59517, #c78903, #f4e182, #c59517, #f1c870);
 	    @include mobile {
 	    	height: auto;
@@ -821,9 +919,16 @@ section.edu-program {
 	}
 }
 section.schools {
-	padding: 9rem 4rem;
+	padding: 8.3rem 4rem 8.2rem;
+	text-align: center;
+	@include mobile {
+		padding: 5.5rem 4rem 3.5rem;
+	}
 	.big-title {
 		margin-bottom: 7rem;
+		@include mobile {
+			margin-bottom: 4rem;
+		}
 	}
 	.row {
 		margin-right: -2rem !important;
@@ -862,33 +967,43 @@ section.schools {
 		    padding: 1.5rem 1.3rem;
 		}
 		.name-cn {
-			font-size: 3.4rem;
+			font-size: 2.8rem;
 			font-weight: 500;
-			@include mobile {
-			    font-size: 2.9rem;
-			}
+			text-align: center;
 		}
 		.name-en {
-			font-size: 2.8rem;
+			font-size: 2.4rem;
 			color: #2f2f2f;
+			text-align: center;
 			@include mobile {
 			    font-size: 2.2rem;
 			}
 		}
 	}
 	.see-more {
-		display: block;
-		text-align: center;
+		display: inline-block;
 		margin: 1rem auto 5rem;
-		width: 40rem;
-		height: 12rem;
-		border-radius: 4px;
-	  	background-color: #191919;
-		line-height: 12rem;
-		font-size: 3.4rem;
-		letter-spacing: 1px;
-  		color: #ffffff;
-	    margin-top: 2rem;
+		height: 4.0rem;
+		line-height: 4.0rem;
+		font-size: 2.8rem;
+		letter-spacing: 0.8px;
+  		color: #1a73e8;
+	    margin-top: 0;
+	    position: relative;
+	    @include mobile {
+    	    margin-top: 1rem;
+	    }
+	    &:after {
+	    	position: absolute;
+	    	width: 1.3rem;
+	    	height: 1.3rem;
+	    	content: '';
+	    	right: -2.3rem;
+	    	top: 50%;
+	    	background: url(../images/icon_arrow_blue.svg) center no-repeat;
+	    	background-size: contain;
+	    	transform: translateY(-50%) rotate(90deg);
+	    }
 	}
 }
 section.freq-ask {
@@ -918,24 +1033,25 @@ section.freq-ask {
 			padding: 2rem 5.5rem 2rem 3rem;
 			font-size: 3.4rem;
 			line-height: 1.5;
-			color: #000000;
+			color: #c88a04;
 			position: relative;
+			@include mobile {
+				font-size: 2.8rem;
+			}
 			&:after {
 				content: '';
 				position: absolute;
 				width: 3.5rem;
 				height: 3rem;
-				background: url(../images/icon_arrow.svg) center no-repeat;
+				background: url(../images/icon_arrow_orange.svg) center no-repeat;
 				background-size: contain;
-				top: 3.2rem;
+				top: 50%;
 				right: 2.7rem;
-				transform: rotate(180deg);
+				transform: translateY(-50%) rotate(180deg);
 			}
 			&[aria-expanded="true"] {
 				&:after {
-					background: url(../images/icon_arrow.svg) center no-repeat;
-					background-size: contain;
-				    transform: rotate(0);
+				    transform: translateY(-50%) rotate(0);
 				}
 			}
 		}
@@ -944,18 +1060,22 @@ section.freq-ask {
 		font-size: 2.8rem;
 		line-height: 1.71;
 		text-align: justify;
-  		color: #986800;
+  		color: #000000;
   		padding: 2.7rem 3rem;
+	}
+	.panel-group {
+		padding-bottom: 0;
 	}
 }
 footer {
-	padding: 12rem 0 4.3rem;
+	padding: 4rem 0 4.3rem;
+	background-color: #000;
 	.companies {		
-		margin-bottom: 7.4rem;
+		margin-bottom: 3rem;
 	    padding-left: 2rem;
 		li {
 			float: left;
-			max-width: 33.333333%;
+			max-width: 50%;
 			padding: 0 3.4rem;
 			position: relative;
 			a {
@@ -988,9 +1108,9 @@ footer {
 		}
 	}
 	.copy-right {
-		font-size: 2.4rem;
+		font-size: 2rem;
 		text-align: center;
-  		color: #4a4a4a;
+  		color: #ffffff;
 	}	
 }
 .puls-circle {
@@ -1064,8 +1184,9 @@ footer {
  			letter-spacing: 1px;
  			color: #000000;
  			@include mobile {
-			    font-size: 2.35rem;
+			    font-size: 2.4rem;
 		        line-height: 1.31;
+	            font-weight: 600;
  			}
  			span {
  				width: 22%;
@@ -1100,19 +1221,20 @@ footer {
 		color: #2f2f2f;
 		p {
 			margin-bottom: 6.9rem;
+			font-size: 2.4rem;
 		}
 	}
 }
-.mobile-call {
-	width: 12.5rem;
-    height: 12.5rem;
+.mobile-call,.social-chat {
+	width: 11rem;
+    height: 11rem;
     display: block;
     position: fixed;
-    background: #000;
+    background: #fff;
     border-radius: 50%;
-    bottom: 20px;
+    bottom: 4rem;
     line-height: 12.5rem;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
     z-index: 100;
 	right: 2.3rem;
 	&:before {
@@ -1125,10 +1247,21 @@ footer {
 	    margin-left: -50%;
 	    margin-top: -50%;
 	    border-radius: 50%;
-	    background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(200, 138, 4, 0.5);
 	    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 	    opacity: 0;
-	  }
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		z-index: 50;
+		border-radius: 50%;
+	}
     img {
 	    position: absolute;
 	    top: 50%;
@@ -1136,11 +1269,21 @@ footer {
 	    right: 0;
 	    margin: 0 auto;
 	    transform: translateY(-50%);
-	    max-width: 30%;
+	    max-width: 45%;
+	    z-index: 51;
     }
 }
+.social-chat {
+	bottom: 18rem;
+	&:before {
+		content: initial;
+	}
+}
 .owl-stage-outer {
-	padding: 5rem 0;
+	padding: 5rem 0 9rem;
+	@include mobile {
+		padding: 5rem 0;
+	}
 }
 .owl-carousel {
 	.owl-item {
@@ -1149,10 +1292,63 @@ footer {
 		&.center {
 			transform: scaleY(1);
 		}
+	}
+	.owl-dots {
+		display: none;
 	}	
 }
 .carousel {
 	.nextButton,.prevButton {
 		display: none;
+	}
+}
+.ui-loader {
+	display:none !important;
+}
+#modal-phone {
+	.modal-dialog {
+	    position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    max-width: 750px;
+	    padding-right: 15px;
+	    @include mobile {
+	    	padding-right: 0;
+	    }
+	}
+	.modal-content {
+		border-radius: 0;
+	}
+	.modal-body {
+		padding: 0;
+	}
+	li {
+		height: 10rem;
+		line-height: 10rem;
+		text-align: center;
+		border-top: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		margin-top: -1px;
+		a {
+			font-size: 3.6rem;
+		  	color: #000000;
+		  	display: block;
+		}
+	}
+	.close-bt {
+		width: 100%;
+		text-align: center;
+		height: 10rem;
+		line-height: 10rem;
+		font-size: 3.6rem;
+	  	color: #000000;
+	  	border: none;
+	  	box-shadow: none;
+	  	background-color: #fff;
+	  	border-top: 1.3rem solid #e7e7ed;
 	}
 }

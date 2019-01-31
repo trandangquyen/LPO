@@ -735,10 +735,10 @@ Version: 1.1
                 goTo(currentSlide - 1, true, false);
             });
             el.children('.slides').on("swipeleft",function(){
-                goTo(currentSlide - 1, true, false);
+                goTo(currentSlide + 1, true, false);
             });
             el.children('.slides').on("swiperight",function(){
-                goTo(currentSlide + 1, true, false);
+                goTo(currentSlide - 1, true, false);
             }); 
         };
 
