@@ -964,7 +964,7 @@ Version: 1.1
 
         var stopAutoplay = function () {
             if (settings.autoplay == true) {
-                clearInterval(intervalProcess);
+                // clearInterval(intervalProcess);
                 return;
             }
         };

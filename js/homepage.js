@@ -102,7 +102,7 @@
         setInterval(function(){
             var random = Math.floor(Math.random()*12);
             $(".puls-circle").eq(random).addClass('active').siblings().removeClass('active'); 
-        }, 3000);
+        }, 2000);
     }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */

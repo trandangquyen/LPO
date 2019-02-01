@@ -217,7 +217,7 @@ section.special-sv {
   font-size: 3.4rem;
   font-weight: 500;
   text-align: justify;
-  color: #000000;
+  color: #fff;
   margin-bottom: 7rem;
   display: inline-block;
   background: #D9D9D9;
@@ -551,6 +551,9 @@ section.part-5 {
     color: #000000;
     position: relative;
     padding-left: 2.7rem; }
+    @media (max-width: 767px) {
+      section.part-5 ul li {
+        font-size: 2.4rem; } }
     section.part-5 ul li:before {
       content: '';
       width: 1.2rem;
@@ -570,7 +573,8 @@ section.part-5 {
   font-size: 4rem;
   letter-spacing: 1px;
   color: #c88a04;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
 
 section.success .slick-center {
   transform: scale(1.08); }
@@ -983,8 +987,8 @@ footer {
       font-size: 2.4rem; }
 
 .mobile-call, .social-chat {
-  width: 11rem;
-  height: 11rem;
+  width: 8rem;
+  height: 8rem;
   display: block;
   position: fixed;
   background: #fff;
@@ -1028,9 +1032,7 @@ footer {
     z-index: 51; }
 
 .social-chat {
-  bottom: 18rem; }
-  .social-chat:before {
-    content: initial; }
+  bottom: 15rem; }
 
 .owl-stage-outer {
   padding: 5rem 0 9rem; }
