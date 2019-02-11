@@ -1181,43 +1181,53 @@ footer {
 }
 .success-cont {
 	padding: 4rem;
+	h1 {
+		font-size: 4rem;
+		font-weight: 500;
+		color: #2f2f2f;
+		margin-bottom: 5rem;
+	}
+	h2 {
+		font-size: 2.8rem;
+		letter-spacing: 1px;
+		color: #fff;
+  		font-weight: 500;
+		height: 6rem;
+		line-height: 6rem;
+		display: inline-block;
+		padding: 0 2rem;
+		margin-bottom: 4rem;
+	    background-image: linear-gradient(to right, #7c4b0a 30%, #c59517 73%, #c59517);
+	}
 	.intro-wp {
-		text-align: left;
-		margin-bottom: 3rem;
-		li {
+		margin-bottom: 5rem;
+		.offer {
+			float: left;
+			margin-right: 4rem;
+			max-width: 15.4rem;
+		    border-radius: 4px;
+		    position: relative;
+		    &:before {
+		    	border-radius: 4px;
+		    	content: '';
+			    background-image: linear-gradient(to bottom, #d5a544, #ac7a15);
+			    padding: 10px;
+			    width: 100%;
+			    height:100%;
+			    top: -10px;
+			    left: -10px;
+			    position:absolute;
+			    z-index:-1;
+		    }
+		}
+		.name {
+			font-size: 3.4rem;
+			font-weight: 600;
+			margin-bottom: 3rem;
+		}
+		.age,.background {
 			font-size: 2.8rem;
-			font-weight: 500;
-			line-height: 1.71;
- 			letter-spacing: 1px;
- 			color: #000000;
- 			@include mobile {
-			    font-size: 2.4rem;
-		        line-height: 1.31;
-	            font-weight: 600;
- 			}
- 			span {
- 				width: 22%;
- 				display: inline-block;
- 				position: relative;
- 				margin-right: 3.0rem;
- 				@include mobile {
- 					width: 33.5%;
- 				}
- 				@media screen and (max-width: 320px)  {
-					width: 24.5%;
-				}
- 				&:after {
- 					content: ":";
- 					position: absolute;
- 					right: -12px;
-				    top: -2px;
- 					font-size: 2.8rem;
-  					font-weight: 500;
- 				}
- 			}
- 			.right {
- 				float: right;
- 			}
+			margin-bottom: 0.8rem;
 		}
 	}
 	.std-profile {
@@ -1230,6 +1240,26 @@ footer {
 			margin-bottom: 6.9rem;
 			font-size: 2.4rem;
 		}
+	}
+	.school-logo {
+		float: left;
+		margin-right: 4rem;
+		max-width: 14rem;
+		padding: 2px;
+		background-image: linear-gradient(to right, #7c4b0a, #c59517 29%, #c78903 48%, #e7c85e 56%, #f4e182 60%, #c59517 73%, #f1c870);
+		border-radius: 50%;
+	}
+	.cn-name,.en-name {
+		font-size: 3.4rem;
+		font-weight: 600;
+		color: #2f2f2f;
+	}
+	.school-info {
+		margin-top: 4rem;
+		font-size: 2.8rem;
+		letter-spacing: 1px;
+		text-align: justify;
+		color: #2f2f2f;
 	}
 }
 .mobile-call,.social-chat {
