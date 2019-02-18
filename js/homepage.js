@@ -1,5 +1,9 @@
 (function($) {
-
+    $( document ).on( "mobileinit", function() {
+        $.mobile.loading().hide();
+        $.mobile.ajaxEnabled = false;
+        $.mobile.hideUrlBar = false;
+    });
     function runSlider(){
          $('.flexslider').flexslider({
             animation: "slide",

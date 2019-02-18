@@ -855,7 +855,8 @@ section.freq-ask .panel-body {
   color: #000000;
   padding: 2.7rem 3rem; }
 section.freq-ask .panel-group {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 footer {
   padding: 4rem 0 4.3rem;
@@ -965,22 +966,25 @@ footer {
       margin-right: 4rem;
       max-width: 15.4rem;
       border-radius: 4px;
-      position: relative; }
-      .success-cont .intro-wp .offer:before {
-        border-radius: 4px;
-        content: '';
-        background-image: linear-gradient(to bottom, #d5a544, #ac7a15);
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        top: -10px;
-        left: -10px;
-        position: absolute;
-        z-index: -1; }
+      position: relative;
+      padding: 1px;
+      background-image: linear-gradient(to bottom, #ac7a15, #d5a544);
+      border-image: linear-gradient(#ac7a15, #d5a544) 27; }
     .success-cont .intro-wp .name {
       font-size: 3.4rem;
       font-weight: 600;
       margin-bottom: 3rem; }
+    .success-cont .intro-wp .gender {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      background: url(../images/icon_boy.png) center no-repeat;
+      background-size: contain;
+      position: relative;
+      top: 0.8rem; }
+      .success-cont .intro-wp .gender.female {
+        background: url(../images/icon_girl.png) center no-repeat;
+        background-size: contain; }
     .success-cont .intro-wp .age, .success-cont .intro-wp .background {
       font-size: 2.8rem;
       margin-bottom: 0.8rem; }
@@ -999,6 +1003,7 @@ footer {
     max-width: 14rem;
     padding: 2px;
     background-image: linear-gradient(to right, #7c4b0a, #c59517 29%, #c78903 48%, #e7c85e 56%, #f4e182 60%, #c59517 73%, #f1c870);
+    border-image: linear-gradient(#ac7a15, #d5a544) 27;
     border-radius: 50%; }
   .success-cont .cn-name, .success-cont .en-name {
     font-size: 3.4rem;
