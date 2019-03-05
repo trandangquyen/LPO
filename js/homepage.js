@@ -3,6 +3,8 @@
         $.mobile.loading().hide();
         $.mobile.ajaxEnabled = false;
         $.mobile.hideUrlBar = false;
+        $.mobile.page.prototype.options.keepNative = "select, textarea";
+        // $.mobile.autoInitializePage = false;
     });
     function runSlider(){
          $('.flexslider').flexslider({

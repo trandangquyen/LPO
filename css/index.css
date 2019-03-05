@@ -82,8 +82,11 @@ section.customize {
     float: left;
     text-align: center;
     max-width: 33.33333%; }
-    section.customize .person-item:nth-child(2) .person-title {
-      padding-left: 12%; }
+    section.customize .person-item:nth-child(2) {
+      position: relative;
+      left: -2.8rem; }
+      section.customize .person-item:nth-child(2) .person-title {
+        padding-left: 22%; }
   section.customize .person-title {
     color: #c88a04;
     font-size: 2.8rem;
@@ -737,11 +740,11 @@ section.edu-program {
         max-width: 100%; } }
 
 section.schools {
-  padding: 8.3rem 4rem 8.2rem;
+  padding: 8.3rem 4rem 8.6rem;
   text-align: center; }
   @media (max-width: 767px) {
     section.schools {
-      padding: 5.5rem 4rem 3.5rem; } }
+      padding: 5.5rem 2rem 9.5rem; } }
   section.schools .big-title {
     margin-bottom: 7rem; }
     @media (max-width: 767px) {
@@ -778,18 +781,21 @@ section.schools {
     background-color: #f2f2f2; }
     @media (max-width: 767px) {
       section.schools .sch-name {
-        padding: 1.5rem 1.3rem; } }
+        padding: 1.5rem 1rem; } }
     section.schools .sch-name .name-cn {
       font-size: 2.8rem;
       font-weight: 500;
       text-align: center; }
+      @media (max-width: 767px) {
+        section.schools .sch-name .name-cn {
+          font-size: 2.4rem; } }
     section.schools .sch-name .name-en {
       font-size: 2.4rem;
       color: #2f2f2f;
       text-align: center; }
       @media (max-width: 767px) {
         section.schools .sch-name .name-en {
-          font-size: 2.2rem; } }
+          font-size: 2rem; } }
   section.schools .see-more {
     display: inline-block;
     margin: 1rem auto 5rem;
@@ -813,6 +819,28 @@ section.schools {
       background: url(../images/icon_arrow_blue.svg) center no-repeat;
       background-size: contain;
       transform: translateY(-50%) rotate(90deg); }
+  section.schools .qr-code {
+    padding: 4rem 1.5rem 2rem;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+    margin-top: 2rem; }
+    section.schools .qr-code h3 {
+      font-size: 2.8rem;
+      text-align: center;
+      color: #2f2f2f;
+      margin-bottom: 2rem; }
+      section.schools .qr-code h3 br {
+        display: none; }
+        @media (max-width: 767px) {
+          section.schools .qr-code h3 br {
+            display: block; } }
+    section.schools .qr-code img {
+      width: 42rem; }
+      @media (max-width: 767px) {
+        section.schools .qr-code img {
+          width: initial;
+          max-width: 150px; } }
 
 section.freq-ask .panel-default:first-child .panel-heading {
   border-top: none; }
