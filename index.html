@@ -178,12 +178,23 @@
 					</div>
 					<div class="tt-item">
 						<div class="img-wrap">
-							<img src="images/mikkel.jpg" alt="" class="tutor-avatar">
+							<img src="images/yan.jpg" alt="" class="tutor-avatar">
 						</div>
-						<h3 class="tt-name">Mikkel 赵老师</h3>
+						<h3 class="tt-name">Yan 吴老师</h3>
 						<div class="tt-profile">
-							LPO深圳办资深留学顾问，五年的英，美低龄留学咨询背景，拥有丰富的留学规划方面的经验，对英国私校有深入研究。曾就职与知名海外贸易公司。热爱教育咨询事业，熟悉申请各个环节、要点及思路。中学，本科，申请都有非常丰富的申请经验，属
-							于行业中的“全能型咨询顾问”。他前期选校和后期跟进都获得家长的称赞，有很强的责 任心，成为了许多学生家长的良师益友。
+							在伦敦知名私立高中完成A-level课程后，以A*AA的成绩入读伦敦大学学院城市规划专业，毕业后于伦敦帝国理工大学获管理学硕士学位，对英国传统精英教育及生活方式具有深刻而独特的切身体会。在高端定制旅游业的咨询经验使其能高效了解客户需求并提供专业而细致的优质服务。
+						</div>
+						<div class="tt-footer">
+							<a href="#" class="view-more">展开</a>
+						</div>
+					</div>
+					<div class="tt-item">
+						<div class="img-wrap">
+							<img src="images/sherry.jpg" alt="" class="tutor-avatar">
+						</div>
+						<h3 class="tt-name">Sherry 顾老师</h3>
+						<div class="tt-profile">
+							LPO上海办资深留学顾问，有6年的留学经历，高中时入读英国私立学校后考入英国约克大学，硕士就读于伦敦政治经济学院心理学系。在英国多个城市生活学习，深入了解英国本土文化。曾就职于中国银行上海市分行任客户经理，在外汇市场，跨境业务方面有丰富的经验，为高净值客户提供全面的金融服务。在英国中小学留学领域，Sherry以自身留学经历及多年的工作经验，为家长答疑解惑，为学生提供定制化的学业规划，帮助孩子考取自己理想的私校。
 						</div>
 						<div class="tt-footer">
 							<a href="#" class="view-more">展开</a>
@@ -200,7 +211,7 @@
 						<div class="tt-footer">
 							<a href="#" class="view-more">展开</a>
 						</div>
-					</div>
+					</div>					
 				</div>
 			</section>
 			<section class="part-3">
@@ -605,6 +616,31 @@
         $.mobile.loadingMessage = false;
     });            
     </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <script>
+	  wx.config({
+	    appId: 'wx188d39e81b6057de',
+	    timestamp: '1552890248',
+	    nonceStr: 'GD0aUmTZSYllQ3AP',
+	    signature: 'f3f54b65f1649fd24f2ec55b4974557ffdb885ce',
+	    jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo","onMenuShareQZone",
+	        "chooseImage", "getNetworkType", "hideOptionMenu", "showOptionMenu", "hideMenuItems",
+	        "showMenuItems", "hideAllNonBaseMenuItem", "showAllNonBaseMenuItem", "closeWindow"]
+	  });
+
+	  wx.ready(function(){
+	    wx.updateAppMessageShareData({
+	      title: '美国名校导师服务',
+	      desc: '专注于英国私校精英教育领航计划，匠心定制，遇见未来！',
+	      link: 'https://lpo.intergreat.com/',
+	      imgUrl: 'https://lpo.intergreat.com/images/lpo-logo.png',
+	      success: function() {
+	        //console.log('success');
+
+	      }
+	    })
+	  });
+	</script>
 </body>
 
 </html>
